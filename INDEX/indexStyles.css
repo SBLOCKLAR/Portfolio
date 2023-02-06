@@ -1,6 +1,7 @@
 body {
     background-color: rgb(250, 247, 240);
     font-family: Oxygen;
+    color: #363062;
 }
 
 nav {
@@ -18,7 +19,7 @@ section.introCard {
     border: solid 1px #CDFCF6;
     background-image: url(/ASSETS/images/cardBG.jpg);
     background-size: cover;
-    max-width: 95%;
+    max-width: 1100px;
     margin: auto;
     box-shadow: -5px 5px 5px rgb(152, 168, 248, 60%);
     border-radius: 2%;
@@ -26,22 +27,35 @@ section.introCard {
     grid-template-columns: 1fr 1fr;
 }
 
+#cardPhoto {
+    border-radius: 50%;
+    max-width: 55%;
+    margin: auto;
+    opacity: 100%;
+    padding: 20px;
+}
+
 div.introCardText {
     text-align: center;
     margin: auto 4%;
 }
 
-#cardPhoto {
-    border-radius: 50%;
-    max-width: 75%;
-    margin: auto;
-    /* max-height: 200px; */
-    opacity: 100%;
+
+.toolbox {
+    display: flex;
+    justify-content: space-around;
 }
+
+.toolbox>span {
+    background-color: #98A8F8;
+    border-radius: 20%;
+    color: #CDFCF6;
+}
+
+
 
 @media screen and (orientation: portrait) {
     section.introCard {
         grid-template-columns: 1fr;
-        padding: 10px;
     }
 }

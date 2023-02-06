@@ -36,7 +36,8 @@ Color Pallette
 Lt Beige - #FAF7F0, rgb(250, 247, 240)
 Minty Blue - #CDFCF6, rgb(205, 252, 246)
 Lt Purple - #BCCEF8, rgb(188, 206, 248)
-Darker Purple - #98A8F8, rgb(152, 168, 248)
+MedLt Purple - #98A8F8, rgb(152, 168, 248)
+DK purple - #363062, rgb(54, 48, 98)
 
 ### Font
 https://fonts.google.com/specimen/Oxygen
