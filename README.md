@@ -5,15 +5,13 @@
 This is my first portfolio website! 
 
 What was your motivation?
-    To find a satisfying and fulfilling career
+    To find a satisfying and fulfilling career in frontend web development
 
 Why did you build this project?
-    To build a website that demonstrated my knowledge and skills in Frontend Web Development.
+    To build a website that demonstrates my knowledge and skills in Frontend Web Development.
 
 What did you learn?
     How to build a website from the bottom up!
-    How to write a README.
-    How to use Git/GitHub
     
 
 What makes your project stand out?
@@ -31,3 +29,10 @@ What makes your project stand out?
 <!-- 7. Add a License -->
 <!-- 8. Badges -->
 <!-- 10. Include Tests) -->
+
+## Design
+Color Pallette
+Lt Beige - #FAF7F0, rgb(250, 247, 240)
+Minty Blue - #CDFCF6, rgb(205, 252, 246)
+Lt Purple - #BCCEF8, rgb(188, 206, 248)
+Darker Purple - #98A8F8, rgb(152, 168, 248)

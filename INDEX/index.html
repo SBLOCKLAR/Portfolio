@@ -5,17 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarah Beth|FE Web Dev</title>
-    <style href="indexStyles.css"></style>
+    <title>Sarah Beth | FE Web Dev</title>
+    <link rel="stylesheet" href="indexStyles.css">
+    </link>
 </head>
 
 <body>
-    <nav>
-        <a href="">Projects</a>
-        <a href="">Resume</a>
+    <nav class="navBar">
+        <ul>
+            <li><a href="/PROJECTS/projectsIndex.html">Projects</a></li>
+            <li><a href="/RESUME/resumeIndex.html">Resume</a></li>
+            <li><a href="/BLOG/blogIndex.html">Blog</a></li>
+        </ul>
     </nav>
     <header>
-        <div class="introCard"></div>
+        <section class="introCard">
+            <img src="/assets/images/photoIndex.jpg" alt="A picture of me, SB">
+            <h1>Sarah Beth Locklar</h1>
+            <h2>Frontend Web Developer</h2>
+            <!-- This should be a value build statement -->
+            <p> A quick learner and problem-solver, driven by a passion for technology and a desire
+                to continuously improve. My goal is to contribute to a team developing user-friendly and highly
+                accessible websites in an environment that continues to develop my knowledge and skills in all areas of
+                web
+                development.</p>
+            <section class="socialMedia">
+                <div id="linkedIn">LinkedIn</div>
+                <div id="gitHub">GitHub</div>
+                <div id="stackOverflow">Stack Overflow</div>
+            </section>
+            <section class="toolbox">
+                <div id="htmlCSS">HTML/CSS</div>
+                <div id="js">JavaScript</div>
+                <div id="bootstrap">Bootstrap</div>
+                <div id="bulma">Bulma</div>
+            </section>
+        </section>
     </header>
     <main>
         <div class="featuredProjects"></div>
@@ -23,7 +48,11 @@
             <input type="text">
         </form>
     </main>
-    <footer></footer>
+    <footer>
+        <a href="/PROJECTS/projectsIndex.html">Projects</a>
+        <a href="/RESUME/resumeIndex.html">Resume</a>
+        <a href="/BLOG/blogIndex.html">Blog</a>
+    </footer>
     <script src="indexApp.js"></script>
 </body>
 
