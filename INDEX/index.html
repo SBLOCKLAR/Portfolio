@@ -8,38 +8,46 @@
     <title>Sarah Beth | FE Web Dev</title>
     <link rel="stylesheet" href="indexStyles.css">
     </link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    </style>
 </head>
 
 <body>
-    <nav class="navBar">
-        <ul>
-            <li><a href="/PROJECTS/projectsIndex.html">Projects</a></li>
-            <li><a href="/RESUME/resumeIndex.html">Resume</a></li>
-            <li><a href="/BLOG/blogIndex.html">Blog</a></li>
-        </ul>
-    </nav>
     <header>
+        <nav class="navBar">
+            <ul class="navBar">
+                <li><a href="/PROJECTS/projectsIndex.html">Projects</a></li>
+                <li><a href="/RESUME/resumeIndex.html">Resume</a></li>
+                <li><a href="/BLOG/blogIndex.html">Blog</a></li>
+            </ul>
+        </nav>
         <section class="introCard">
-            <img src="/assets/images/photoIndex.jpg" alt="A picture of me, SB">
-            <h1>Sarah Beth Locklar</h1>
-            <h2>Frontend Web Developer</h2>
-            <!-- This should be a value build statement -->
-            <p> A quick learner and problem-solver, driven by a passion for technology and a desire
-                to continuously improve. My goal is to contribute to a team developing user-friendly and highly
-                accessible websites in an environment that continues to develop my knowledge and skills in all areas of
-                web
-                development.</p>
-            <section class="socialMedia">
-                <div id="linkedIn">LinkedIn</div>
-                <div id="gitHub">GitHub</div>
-                <div id="stackOverflow">Stack Overflow</div>
-            </section>
-            <section class="toolbox">
-                <div id="htmlCSS">HTML/CSS</div>
-                <div id="js">JavaScript</div>
-                <div id="bootstrap">Bootstrap</div>
-                <div id="bulma">Bulma</div>
-            </section>
+            <img id="cardPhoto" src="/assets/images/photoIndex.jpg" alt="A picture of me, SB">
+            <div class="introCardText">
+                <h1>Sarah Beth Locklar</h1>
+                <h2>Frontend Web Developer</h2>
+                <!-- This should be a value build statement -->
+                <p> A quick learner and problem-solver, driven by a passion for technology and a desire
+                    to continuously improve. My goal is to contribute to a team developing user-friendly and highly
+                    accessible websites in an environment that continues to develop my knowledge and skills in all areas
+                    of
+                    web
+                    development.</p>
+                <section class="socialMedia">
+                    <span id="linkedIn">LinkedIn</span>
+                    <span id="gitHub">GitHub</span>
+                    <span id="stackOverflow">Stack Overflow</span>
+                </section>
+        </section>
+        <section class="toolbox">
+            <span id="htmlCSS">HTML/CSS</span>
+            <span id="js">JavaScript</span>
+            <span id="bootstrap">Bootstrap</span>
+            <span id="bulma">Bulma</span>
+        </section>
         </section>
     </header>
     <main>
@@ -49,9 +57,13 @@
         </form>
     </main>
     <footer>
-        <a href="/PROJECTS/projectsIndex.html">Projects</a>
-        <a href="/RESUME/resumeIndex.html">Resume</a>
-        <a href="/BLOG/blogIndex.html">Blog</a>
+        <nav class="navBar">
+            <ul class="navBar">
+                <li><a href="/PROJECTS/projectsIndex.html">Projects</a></li>
+                <li><a href="/RESUME/resumeIndex.html">Resume</a></li>
+                <li><a href="/BLOG/blogIndex.html">Blog</a></li>
+            </ul>
+        </nav>
     </footer>
     <script src="indexApp.js"></script>
 </body>

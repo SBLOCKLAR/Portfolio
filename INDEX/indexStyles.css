@@ -1,3 +1,47 @@
 body {
     background-color: rgb(250, 247, 240);
+    font-family: Oxygen;
+}
+
+nav {
+    /* background-color: rgb(152, 168, 248); */
+}
+
+ul.navBar {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: end;
+}
+
+section.introCard {
+    border: solid 1px #CDFCF6;
+    background-image: url(/ASSETS/images/cardBG.jpg);
+    background-size: cover;
+    max-width: 95%;
+    margin: auto;
+    box-shadow: -5px 5px 5px rgb(152, 168, 248, 60%);
+    border-radius: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.introCardText {
+    text-align: center;
+    margin: auto 4%;
+}
+
+#cardPhoto {
+    border-radius: 50%;
+    max-width: 75%;
+    margin: auto;
+    /* max-height: 200px; */
+    opacity: 100%;
+}
+
+@media screen and (orientation: portrait) {
+    section.introCard {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
 }

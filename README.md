@@ -12,6 +12,7 @@ Why did you build this project?
 
 What did you learn?
     How to build a website from the bottom up!
+    The best times to use flex vs grid #CSS
     
 
 What makes your project stand out?
@@ -36,3 +37,11 @@ Lt Beige - #FAF7F0, rgb(250, 247, 240)
 Minty Blue - #CDFCF6, rgb(205, 252, 246)
 Lt Purple - #BCCEF8, rgb(188, 206, 248)
 Darker Purple - #98A8F8, rgb(152, 168, 248)
+
+### Font
+https://fonts.google.com/specimen/Oxygen
+
+### Images
+Background Image on Intro Card
+Photo by <a href="https://unsplash.com/it/@gradienta?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gradienta</a> on <a href="https://unsplash.com/photos/pYDaWACPVZw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> 
+https://unsplash.com/photos/pYDaWACPVZw
