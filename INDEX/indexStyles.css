@@ -18,6 +18,10 @@ a:hover {
     text-shadow: -.75px .75px rgb(152, 168, 248, 50%);
 }
 
+a:visited {
+    color: rgb(152, 168, 248);
+}
+
 header,
 footer {
     max-width: 1000px;

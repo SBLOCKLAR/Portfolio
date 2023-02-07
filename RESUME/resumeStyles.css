@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(250, 247, 240);
+    font-family: Oxygen;
+    color: #363062;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a:link {
+    text-decoration: none;
+    color: #363062;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #363062;
+    text-shadow: -.75px .75px rgb(152, 168, 248, 50%);
+}
+
+a:visited {
+    color: rgb(152, 168, 248);
+}
+
+header,
+footer {
+    max-width: 1000px;
+    width: 100%;
+}
+
+ul.navBar {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.toolbox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.toolbox>span {
+    background-color: rgb(54, 48, 98);
+    border-radius: 5px;
+    color: #CDFCF6;
+    box-shadow: -3px 3px 5px rgb(152, 168, 248, 60%);
+    padding: 0px 12px;
+}
