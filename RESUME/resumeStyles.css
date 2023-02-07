@@ -48,3 +48,71 @@ ul.navBar {
     box-shadow: -3px 3px 5px rgb(152, 168, 248, 60%);
     padding: 0px 12px;
 }
+
+.contactCard {
+    border: solid 1px #CDFCF6;
+    background-image: url(/ASSETS/images/cardBG.jpg);
+    background-size: cover;
+    min-height: 250px;
+    max-width: 870;
+    min-width: fit-content;
+    box-shadow: -5px 5px 5px rgb(152, 168, 248, 60%);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 20px;
+    padding: 20px;
+}
+
+#photoAndSocial {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#contactCardPhoto {
+    border-radius: 50%;
+    max-width: 200px;
+    margin: auto;
+}
+
+.contactCardText {
+    text-align: center;
+    margin: auto;
+}
+
+
+.contactCardText a {
+    display: block;
+}
+
+.toolbox {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.toolbox>span {
+    background-color: rgb(54, 48, 98);
+    border-radius: 5px;
+    color: #CDFCF6;
+    box-shadow: -3px 3px 5px rgb(152, 168, 248, 60%);
+    /* padding: 0px 12px; */
+    margin-top: 5px;
+}
+
+main {
+    width: 100%;
+    max-width: 870;
+}
+
+/* button.accordion-button {
+    background-color: #363062;
+    width: 100%;
+} */
+
+@media screen and (orientation: portrait) {
+    .contactCard {
+        grid-template-columns: 1fr;
+    }
+}
