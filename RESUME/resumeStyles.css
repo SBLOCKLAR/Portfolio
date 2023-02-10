@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(250, 247, 240);
+    background-image: rgb(250, 247, 240);
     font-family: Oxygen;
     color: #363062;
     display: flex;
@@ -23,9 +23,11 @@ a:visited {
 }
 
 header,
+main,
 footer {
     max-width: 1000px;
     width: 100%;
+    object-fit: contain;
 }
 
 ul.navBar {
@@ -35,28 +37,12 @@ ul.navBar {
     text-align: center;
 }
 
-
-.toolbox {
-    display: flex;
-    justify-content: space-around;
-}
-
-.toolbox>span {
-    background-color: rgb(54, 48, 98);
-    border-radius: 5px;
-    color: #CDFCF6;
-    box-shadow: -3px 3px 5px rgb(152, 168, 248, 60%);
-    padding: 0px 12px;
-}
-
 .contactCard {
     border: solid 1px #CDFCF6;
     background-image: url(/ASSETS/images/cardBG.jpg);
     background-size: cover;
-    min-height: 250px;
-    max-width: 870;
     min-width: fit-content;
-    box-shadow: -5px 5px 5px rgb(152, 168, 248, 60%);
+    box-shadow: -5px 1px 8px rgb(152, 168, 248, 60%);
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -74,6 +60,7 @@ ul.navBar {
     border-radius: 50%;
     max-width: 200px;
     margin: auto;
+    box-shadow: -5px 1px 8px rgb(152, 168, 248, 85%)
 }
 
 .contactCardText {
@@ -101,15 +88,45 @@ ul.navBar {
     margin-top: 5px;
 }
 
-main {
-    width: 100%;
-    max-width: 870;
+/* REDUNDANT FIX THIS */
+.toolbox {
+    display: flex;
+    justify-content: space-around;
 }
 
-/* button.accordion-button {
-    background-color: #363062;
-    width: 100%;
-} */
+.toolbox>span {
+    background-color: rgb(54, 48, 98);
+    border-radius: 5px;
+    color: #CDFCF6;
+    box-shadow: -3px 3px 8px rgb(152, 168, 248, 85%);
+    padding: 0px 12px;
+}
+
+.accordion {
+    box-shadow: -5px 1px 5px rgb(152, 168, 248, 60%);
+    border-radius: 20px;
+}
+
+.accordion-button {
+    background-color: rgb(152, 168, 248, 0.25);
+    color: #363062;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgb(54, 48, 98);
+    color: #CDFCF6;
+}
+
+.accordion-item {
+    background-color: rgb(250, 247, 240);
+}
+
+.timeAndLocation {
+    font-family: italic;
+}
+
 
 @media screen and (orientation: portrait) {
     .contactCard {
