@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(250, 247, 240);
+    background-color: rgb(54, 48, 98);
     font-family: Oxygen;
     color: #363062;
     display: flex;
@@ -9,7 +9,7 @@ body {
 
 a:link {
     text-decoration: none;
-    color: #363062;
+    color: #CDFCF6;
 }
 
 a:hover {
@@ -31,7 +31,7 @@ footer {
 ul.navBar {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
 }
 
@@ -44,7 +44,7 @@ section.introCard {
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: auto;
+    padding: .25em;
 }
 
 #cardPhoto {
@@ -71,7 +71,8 @@ h1#name {
 
 .toolbox {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .toolbox>span {
@@ -87,10 +88,24 @@ h1#name {
 }
 
 
-/* div.featuredProjects {
+div.featuredProjects {
     display: grid;
-    grid-template-columns: ;
-} */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5em;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 2em;
+}
+
+.project {
+    box-shadow: -5px 5px 5px rgb(152, 168, 248, 60%);
+    border-radius: 20px;
+}
+
+.projectThumbnail {
+    width: 100%;
+    border-radius: 20px;
+}
 
 
 @media screen and (orientation: portrait) {

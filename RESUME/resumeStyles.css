@@ -66,6 +66,7 @@ ul.navBar {
 .contactCardText {
     text-align: center;
     margin: auto;
+    padding: 10px;
 }
 
 
@@ -74,9 +75,8 @@ ul.navBar {
 }
 
 .toolbox {
-    display: flex;
-    flex-wrap: wrap;
-
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 .toolbox>span {
@@ -85,7 +85,7 @@ ul.navBar {
     color: #CDFCF6;
     box-shadow: -3px 3px 5px rgb(152, 168, 248, 60%);
     /* padding: 0px 12px; */
-    margin-top: 5px;
+    margin: 5px 5px;
 }
 
 /* REDUNDANT FIX THIS */
