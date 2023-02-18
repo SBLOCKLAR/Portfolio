@@ -100,6 +100,7 @@ div.featuredProjects {
 .project {
     box-shadow: -5px 5px 5px rgb(152, 168, 248, 60%);
     border-radius: 20px;
+    background-color: #FAF7F0;
 }
 
 .projectThumbnail {
@@ -115,5 +116,12 @@ div.featuredProjects {
 
     #name {
         font-size: 10vw;
+    }
+
+    div.featuredProjects {
+        grid-template-columns: 1fr;
+        width: 100%;
+        place-items: center;
+        padding: .25em;
     }
 }
