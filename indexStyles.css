@@ -31,6 +31,7 @@ ul.navBar {
 
 li>a:link {
     text-decoration: none;
+    color: #CDFCF6;
 }
 
 li>a:visited {
@@ -40,7 +41,7 @@ li>a:visited {
 li>a:hover {
     text-decoration: none;
     color: #FAF7F0;
-    text-shadow: -.75px .75px rgb(152, 168, 248, 50%);
+    text-shadow: -.75px .75px rgb(205, 252, 246, 50%);
 }
 
 section.introCard {
@@ -48,7 +49,7 @@ section.introCard {
     background-image: url(ASSETS/images/cardBG.jpg);
     background-size: cover;
     min-height: 450px;
-    box-shadow: -5px 5px 5px rgb(152, 168, 248, 60%);
+    box-shadow: -5px 5px 5px rgba(205, 252, 246, 50%);
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -108,7 +109,7 @@ div.featuredProjects {
 }
 
 .project {
-    box-shadow: -5px 5px 5px rgb(152, 168, 248, 60%);
+    box-shadow: -5px 5px 5px rgba(205, 252, 246, 50%);
     border-radius: 20px;
     background-color: #FAF7F0;
     place-items: center;
@@ -147,6 +148,5 @@ div.featuredProjects {
 
     .project {
         display: grid;
-        grid-template-columns: 1fr 1fr;
     }
 }

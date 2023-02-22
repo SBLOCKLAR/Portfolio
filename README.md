@@ -47,3 +47,7 @@ Background Image on Intro Card
 Photo by <a href="https://unsplash.com/it/@gradienta?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gradienta</a> on <a href="https://unsplash.com/photos/pYDaWACPVZw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> 
 https://unsplash.com/photos/pYDaWACPVZw
 
+## Resume Page
+Using GitHub source for timeline.  
+Requires NPM install of AOS
+http://michalsnik.github.io/aos/

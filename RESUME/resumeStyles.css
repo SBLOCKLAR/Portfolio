@@ -1,82 +1,84 @@
 body {
-    background-color: #363062;
+    background-color: rgb(54, 48, 98);
     font-family: Oxygen;
-    color: #363062;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-a:link {
-    text-decoration: none;
-    color: #363062;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #363062;
-    text-shadow: -.75px .75px rgb(152, 168, 248, 50%);
-}
-
-a:visited {
-    color: rgb(152, 168, 248);
-}
-
 header,
-main,
 footer {
     max-width: 1000px;
     width: 100%;
-    object-fit: contain;
 }
 
 ul.navBar {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+
 }
 
-.contactCard {
+.navbar>li {
+    color: #CDFCF6;
+}
+
+li>a:link {
+    text-decoration: none;
+    color: #CDFCF6;
+}
+
+li>a:visited {
+    color: #CDFCF6;
+}
+
+li>a:hover {
+    text-decoration: none;
+    color: #FAF7F0;
+    text-shadow: -.75px .75px rgb(205, 252, 246, 50%);
+}
+
+section.introCard {
     border: solid 1px #CDFCF6;
     background-image: url(/ASSETS/images/cardBG.jpg);
     background-size: cover;
-    min-width: fit-content;
-    box-shadow: -5px 1px 8px rgb(152, 168, 248, 60%);
+    min-height: 450px;
+    box-shadow: -5px 5px 5px rgba(205, 252, 246, 50%);
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 20px 20px;
+    padding: .25em;
+    color: #363062;
+}
+
+#cardPhoto {
+    border-radius: 50%;
+    max-width: 280px;
+    margin: auto;
     padding: 20px;
 }
 
-#photoAndSocial {
-    display: flex;
-    flex-direction: column;
+div.introCardText {
     text-align: center;
+    margin: auto 4%;
 }
 
-#contactCardPhoto {
-    border-radius: 50%;
-    max-width: 200px;
-    margin: auto;
-    box-shadow: -5px 1px 8px rgb(152, 168, 248, 85%)
+#name,
+#jobTitle {
+    text-shadow: -1px 1px 3px rgb(152, 168, 248, 80%);
+    margin: 0;
+    color: #363062;
 }
 
-.contactCardText {
-    text-align: center;
-    margin: auto;
-    padding: 10px;
-}
-
-
-.contactCardText a {
-    display: block;
+h1#name {
+    font-size: 40px;
 }
 
 .toolbox {
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .toolbox>span {
@@ -84,22 +86,16 @@ ul.navBar {
     border-radius: 5px;
     color: #CDFCF6;
     box-shadow: -3px 3px 5px rgb(152, 168, 248, 60%);
-    /* padding: 0px 12px; */
-    margin: 5px 5px;
-}
-
-/* REDUNDANT FIX THIS */
-.toolbox {
-    display: flex;
-    justify-content: space-around;
-}
-
-.toolbox>span {
-    background-color: rgb(54, 48, 98);
-    border-radius: 5px;
-    color: #CDFCF6;
-    box-shadow: -3px 3px 8px rgb(152, 168, 248, 85%);
     padding: 0px 12px;
+}
+
+.socialMedia {
+    padding: 15px 0;
+}
+
+h2 {
+    color: #FAF7F0;
+    margin-top: 1em;
 }
 
 .accordion {
@@ -112,6 +108,8 @@ ul.navBar {
     color: #363062;
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px 40px;
+
 }
 
 .accordion-button:not(.collapsed) {
@@ -129,7 +127,11 @@ ul.navBar {
 
 
 @media screen and (orientation: portrait) {
-    .contactCard {
+    section.introCard {
         grid-template-columns: 1fr;
+    }
+
+    #name {
+        font-size: 10vw;
     }
 }
