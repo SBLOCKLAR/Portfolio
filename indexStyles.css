@@ -1,14 +1,10 @@
 body {
     background-color: rgb(54, 48, 98);
     font-family: Oxygen;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-
-
 
 
 header,
@@ -22,7 +18,6 @@ ul.navBar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-
 }
 
 .navbar>li {
@@ -97,11 +92,33 @@ h1#name {
     padding: 15px 0;
 }
 
+.featuredProjectsContainer {
+    margin-top: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+}
+
+h3 {
+    color: #363062;
+    font-size: 3em;
+    letter-spacing: .25rem;
+    text-shadow: -2px 2px 5px #FAF7F0;
+}
+
+h4 {
+    font-size: 1.25em;
+}
 
 div.featuredProjects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5em;
+    gap: 2em;
     width: 100%;
     max-width: 1000px;
     margin-top: 2em;
@@ -110,8 +127,8 @@ div.featuredProjects {
 
 .project {
     box-shadow: -5px 5px 5px rgba(205, 252, 246, 50%);
-    border-radius: 20px;
     background-color: #FAF7F0;
+    border-radius: 20px;
     place-items: center;
     text-align: center;
 }
