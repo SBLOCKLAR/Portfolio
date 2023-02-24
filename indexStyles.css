@@ -1,15 +1,31 @@
 body {
-    background-color: rgb(54, 48, 98);
     font-family: Oxygen;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 header,
 footer {
-    max-width: 1000px;
+
     width: 100%;
 }
 
@@ -40,11 +56,11 @@ li>a:hover {
 }
 
 section.introCard {
-    border: solid 1px #CDFCF6;
+    /* border: solid 1px #CDFCF6;
     background-image: url(ASSETS/images/cardBG.jpg);
-    background-size: cover;
-    min-height: 450px;
-    box-shadow: -5px 5px 5px rgba(205, 252, 246, 50%);
+    background-size: cover; */
+    min-height: 600px;
+    /* box-shadow: -5px 5px 5px rgba(205, 252, 246, 50%); */
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -61,7 +77,7 @@ section.introCard {
 
 div.introCardText {
     text-align: center;
-    margin: auto 4%;
+    margin: auto;
 }
 
 #name,
@@ -71,7 +87,7 @@ div.introCardText {
 }
 
 h1#name {
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .toolbox {
@@ -94,6 +110,7 @@ h1#name {
 
 .featuredProjectsContainer {
     margin-top: 20px;
+    max-width: 1000px;
 }
 
 h1,
@@ -150,6 +167,7 @@ div.featuredProjects {
 @media screen and (orientation: portrait) {
     section.introCard {
         grid-template-columns: 1fr;
+        margin: 0 80px;
     }
 
     #name {
@@ -165,5 +183,11 @@ div.featuredProjects {
 
     .project {
         display: grid;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .introCardText {
+        padding-right: 60px;
     }
 }
