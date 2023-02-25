@@ -8,6 +8,24 @@ body {
     background-color: rgb(54, 48, 98);
     font-family: Oxygen;
     align-items: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 8000% 8000%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 header,
@@ -45,11 +63,7 @@ li>a:hover {
 }
 
 section.introCard {
-    border: solid 1px #CDFCF6;
-    background-image: url(/ASSETS/images/cardBG.jpg);
-    background-size: cover;
     min-height: 450px;
-    box-shadow: -5px 5px 5px rgba(205, 252, 246, 50%);
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
