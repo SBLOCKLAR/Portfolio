@@ -169,10 +169,14 @@ div.featuredProjects {
 
 #helloWorld {
     width: 100%;
-    -webkit-mask-image: linear-gradient(black, transparent);
-    mask-image: linear-gradient(black, transparent);
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
+    mask-image: linear-gradient(rgb(0 0 0 / 1),
+            rgb(0 0 0 / 0.75),
+            rgb(0 0 0 / 0));
+    -webkit-mask-image: linear-gradient(rgb(0 0 0 / 1),
+            rgb(0 0 0 / 0.75),
+            rgb(0 0 0 / 0));
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
 }
 
 form {
@@ -182,12 +186,23 @@ form {
     line-height: 2.5em;
     border: 1px solid #CDFCF6;
     border-top: none;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    padding: 1em;
+    border-radius: 50px;
+    padding: 0;
+    box-shadow: -5px 5px 5px rgba(205, 252, 246, 50%);
+    text-align: center;
 }
 
 input {}
+
+#nameAndEmail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+select {
+    width: 75%;
+}
 
 textarea {
     margin: 10px auto;

@@ -6,7 +6,7 @@
 
 body {
     background-color: rgb(54, 48, 98);
-    font-family: Oxygen;
+    font-family: Oxygen, sans-serif;
     align-items: center;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 8000% 8000%;
@@ -92,7 +92,7 @@ div.introCardText {
 }
 
 h1#name {
-    font-size: 40px;
+    font-size: 3em;
 }
 
 .toolbox {
@@ -115,7 +115,7 @@ h1#name {
 
 .currentRole {
     text-align: center;
-    margin: 20px auto;
+    margin: 2rem;
     background-color: #FAF7F0;
     border-radius: 20px;
     padding: 15px;
@@ -129,6 +129,7 @@ h1#name {
 .currentRolePhoto {
     border-radius: 15px;
     margin: auto;
+    max-width: 60%;
 }
 
 .currentRoleText {
@@ -338,11 +339,28 @@ h1#name {
 }
 
 @media screen and (orientation: portrait) {
+
     section.introCard {
         grid-template-columns: 1fr;
     }
 
     #name {
         font-size: 10vw;
+    }
+
+    .currentRoleContent {
+        grid-template-columns: 1fr;
+    }
+
+    @keyframes slide-in-right {
+        0% {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
 }

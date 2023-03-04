@@ -130,30 +130,32 @@
         <div class="contactContainer">
             <h3>Contact Me!</h3>
 
-            <img id="helloWorld" src="ASSETS/images/helloworldneonsmall.png" alt="hello world">
+
             <form action="">
+                <img id="helloWorld" src="ASSETS/images/helloworldneonsmall.png" alt="hello world">
+                <div class="formContent">
+                    <div id="nameAndEmail">
+                        <label for="yourName">
+                            What's your name? <input id="yourName" type="text" placeholder="Your Name">
+                        </label>
+                        <label for="email">
+                            What's your email address? <input id="email" type="email" placeholder="Email">
+                        </label>
+                    </div>
+                    <label for="fromWhere">
+                        How did you find my page?
+                        <select name="fromWhere" id="fromWhere">
+                            <option value="0">I'm Glad you stopped by!</option>
+                            <option value="1">LinkedIn</option>
+                            <option value="2">Job Application</option>
+                            <option value="3">Mutual Contact</option>
+                            <option value="3">Just passing through</option>
+                        </select>
+                    </label>
 
-                <label for="yourName">
-                    What's your name? <input id="yourName" type="text" placeholder="Your Name">
-                </label>
-                <br>
-                <label for="email">
-                    What's your email address? <input id="email" type="email" placeholder="Email">
-                </label>
-                <br>
-                <label for="fromWhere">
-                    How did you find my page? <select name="fromWhere" id="fromWhere">
-                        <option value="0">--I'm Glad you stopped by!--</option>
-                        <option value="1">LinkedIn</option>
-                        <option value="2">Job Application</option>
-                        <option value="3">Mutual Contact</option>
-                        <option value="3">Just passing through</option>
-                    </select>
-                </label>
-
-                <textarea name="" id="" cols="35" rows="8"></textarea>
-                <button>Send message</button>
-
+                    <textarea name="" id="" cols="35" rows="8"></textarea>
+                    <button>Send message</button>
+                </div>
             </form>
 
         </div>
