@@ -1,8 +1,5 @@
 body {
     font-family: Oxygen;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     background-color: black;
     margin: 0;
     padding: 2rem;
@@ -192,7 +189,6 @@ form {
     text-align: center;
 }
 
-input {}
 
 #nameAndEmail {
     display: grid;
@@ -202,6 +198,8 @@ input {}
 
 select {
     width: 75%;
+    max-width: 250px;
+    text-align: center;
 }
 
 textarea {

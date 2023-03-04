@@ -5,13 +5,11 @@
 }
 
 body {
-    background-color: rgb(54, 48, 98);
-    font-family: Oxygen, sans-serif;
-    align-items: center;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 8000% 8000%;
-    animation: gradient 15s ease infinite;
-    height: 100vh;
+    font-family: Oxygen;
+    background-color: black;
+    margin: 0;
+    padding: 2rem;
+    box-sizing: border-box;
 }
 
 @keyframes gradient {
@@ -63,13 +61,15 @@ li>a:hover {
 }
 
 section.introCard {
-    min-height: 450px;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: .25em;
     color: #363062;
     width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 8000% 8000%;
+    animation: gradient 15s ease infinite;
+    box-shadow: -5px 5px 5px rgba(205, 252, 246, 50%);
 }
 
 #cardPhoto {
@@ -119,6 +119,7 @@ h1#name {
     background-color: #FAF7F0;
     border-radius: 20px;
     padding: 15px;
+    box-shadow: -5px 5px 5px rgba(205, 252, 246, 50%);
 }
 
 .currentRoleContent {
@@ -128,8 +129,8 @@ h1#name {
 
 .currentRolePhoto {
     border-radius: 15px;
-    margin: auto;
-    max-width: 60%;
+    margin: 0 auto;
+    max-width: 50%;
 }
 
 .currentRoleText {
@@ -164,6 +165,18 @@ h1#name {
     width: 50%;
     transition: opacity 500ms;
     margin: 0;
+}
+
+.jobPhoto {
+    margin: 1em;
+}
+
+.tags {
+    font-size: 0.75em;
+    background-color: rgb(188, 206, 248);
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 2px;
 }
 
 /**Styling scrollable elements*/
@@ -352,9 +365,9 @@ h1#name {
         grid-template-columns: 1fr;
     }
 
-    @keyframes slide-in-right {
+    @keyframes slide-in-left {
         0% {
-            transform: translateX(-100px);
+            transform: translateX(100px);
             opacity: 0;
         }
 
