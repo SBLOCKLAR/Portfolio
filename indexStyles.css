@@ -53,11 +53,11 @@ ul.navBar {
 
 li>a:link {
     text-decoration: none;
-    color: #D60F6B;
+    color: whitesmoke;
 }
 
 li>a:visited {
-    color: #D60F6B;
+    color: whitesmoke;
 }
 
 li>a:hover {
@@ -89,7 +89,7 @@ div.introCardText {
 }
 
 .introSummary {
-    background-color: #F9799C;
+    background-color: rgb(249, 121, 156, 80%);
     border-radius: 10px;
     padding: 1em;
     border: 1px solid #01031D
@@ -98,7 +98,6 @@ div.introCardText {
 #name,
 #jobTitle {
     text-shadow: -1px 1px 3px rgb(255, 255, 255, 80%);
-
 }
 
 h1#name {
@@ -183,20 +182,20 @@ div.featuredProjects {
 }
 
 #helloWorld {
-    /* width: 100%;
+    width: 100%;
     mask-image: linear-gradient(rgb(0 0 0 / 1),
-            rgb(0 0 0 / 0.75),
+            rgb(0 0 0 / 0.95),
             rgb(0 0 0 / 0));
     -webkit-mask-image: linear-gradient(rgb(0 0 0 / 1),
-            rgb(0 0 0 / 0.75),
-            rgb(0 0 0 / 0)); */
+            rgb(0 0 0 / 0.95),
+            rgb(0 0 0 / 0));
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     opacity: 75%;
 }
 
 form {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     color: #CDFCF6;
     line-height: 2.5em;
@@ -239,6 +238,10 @@ button {
 @media screen and (orientation: portrait) {
     section.introCard {
         grid-template-columns: 1fr;
+    }
+
+    .introSummary {
+        margin-bottom: 8em;
     }
 
     div.featuredProjects {
