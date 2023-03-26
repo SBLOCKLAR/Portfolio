@@ -1,29 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+
+:root {
+    --button-background: black;
+}
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Oxygen;
     background-color: black;
-    box-sizing: border-box;
+    overflow-x: hidden;
 }
-
-
 
 header {
     width: 100%;
-    background-image: url(../ASSETS/images/crinkleBG.jpg);
-    background-size: cover;
-    min-height: 80vh;
+    background-image: url(https://images.unsplash.com/photo-1467740100611-36858db27485?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80);
+    background-position: bottom;
+    background-size: fill;
+    background-repeat: no-repeat;
+    height: 100vh;
     mask-image: linear-gradient(rgb(0 0 0 / 1),
-            rgb(0 0 0 / 0.98),
+            rgb(0 0 0 / 0.95),
             rgb(0 0 0 / 0));
     -webkit-mask-image: linear-gradient(rgb(0 0 0 / 1),
-            rgb(0 0 0 / 0.98),
+            rgb(0 0 0 / 0.95),
             rgb(0 0 0 / 0));
-
 }
 
 ul.navBar {
@@ -31,58 +37,64 @@ ul.navBar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+    margin: 0 auto;
+    padding-top: 1em;
+    max-width: 800px;
 }
 
 .navbar>li {
-    color: #CDFCF6;
+    color: black;
 }
 
 li>a:link {
     text-decoration: none;
-    color: #CDFCF6;
+    color: black;
+    padding: 0.25em;
+    border-radius: 20px;
 }
 
 li>a:visited {
-    color: #CDFCF6;
+    color: black;
 }
 
 li>a:hover {
     text-decoration: none;
-    color: #FAF7F0;
-    text-shadow: -.75px .75px rgb(205, 252, 246, 50%);
+    color: #679436;
+    background-color: #e8ddb5;
 }
 
-
-
 section.introCard {
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    color: #363062;
+    color: #e8ddb5;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    height: 75vh;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
 #cardPhoto {
     border-radius: 50%;
-    max-width: 280px;
-    margin: auto;
-    padding: 20px;
-}
-
-div.introCardText {
-    text-align: center;
-    margin: auto 4%;
+    max-width: 200px;
+    margin: 2em auto;
 }
 
 #name,
 #jobTitle {
-    text-shadow: -1px 1px 3px rgb(152, 168, 248, 80%);
-    margin: 0;
-    color: #363062;
+    text-shadow: -1px 1px 4px rgb(0, 0, 0, 90%);
+    text-align: right;
+    min-width: 30%;
+    /* margin: 10px; */
 }
 
 h1#name {
-    font-size: 3em;
+    font-size: 4.5em;
+}
+
+#jobTitle {
+    font-size: 2.5em;
 }
 
 .toolbox {
@@ -92,15 +104,34 @@ h1#name {
 }
 
 .toolbox>span {
-    background-color: rgb(54, 48, 98);
+    background-color: #05668D;
     border-radius: 5px;
-    color: #CDFCF6;
-    box-shadow: -3px 3px 5px rgb(152, 168, 248, 60%);
+    color: white;
+    box-shadow: -3px 3px 5px rgb(0, 0, 0, 60%);
     padding: 0px 12px;
+    margin: 0.25em;
 }
 
 .socialMedia {
     padding: 15px 0;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+}
+
+h3 {
+    color: white;
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 1.25em;
 }
 
 .currentRole {
@@ -269,6 +300,15 @@ h1#name {
 #graduated {
     width: 100%;
     border-radius: 50px;
+}
+
+button {
+    background-color: var(--button-background);
+    border: 1px solid #CDFCF6;
+    color: #CDFCF6;
+    padding: .5em;
+    display: block;
+    margin: 10px auto;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */

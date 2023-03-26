@@ -1,22 +1,39 @@
-body {
-    font-family: Oxygen;
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+:root {
+    --body-font-family: Oxygen, sans-serif;
+    --headers-font-family: Viga, sans-serif;
+    --background-color: black;
+    --container-bg-color: rgb(235, 242, 250, 80%);
+    --button-background: black;
+    --tools-font-color: #CDFCF6;
+    --tools-bg-color: #05668D;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font-family);
+    background-color: var(--background-color);
     overflow-x: hidden;
 }
 
 header {
-    max-width: 100vw;
+    width: 100%;
     background-image: url(https://images.unsplash.com/photo-1467740100611-36858db27485?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80);
-    min-height: 100vh;
-    padding: 1em;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
     mask-image: linear-gradient(rgb(0 0 0 / 1),
-            rgb(0 0 0 / 0.98),
+            rgb(0 0 0 / 0.95),
             rgb(0 0 0 / 0));
     -webkit-mask-image: linear-gradient(rgb(0 0 0 / 1),
-            rgb(0 0 0 / 0.98),
+            rgb(0 0 0 / 0.95),
             rgb(0 0 0 / 0));
 }
 
@@ -37,15 +54,17 @@ ul.navBar {
 li>a:link {
     text-decoration: none;
     color: black;
+    padding: 0.25em;
+    border-radius: 20px;
 }
 
 li>a:visited {
-    color: white;
+    color: black;
 }
 
 li>a:hover {
     text-decoration: none;
-    color: #FAF7F0;
+    color: #679436;
     background-color: #e8ddb5;
 }
 
@@ -54,34 +73,28 @@ section.introCard {
     text-align: center;
     display: flex;
     flex-direction: row;
-    margin: 8rem 2rem 8rem 2rem;
+    width: 100%;
+    height: 75vh;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
-
-/* div.introCardText {
-    /* max-width: 800px; */
-/* text-align: center; 
-    width: 100%;*/
-
 .introSummary {
-    background-color: rgb(235, 242, 250, 80%);
+    background-color: var(--container-bg-color);
     border-radius: 10px;
     border: 1px solid #666a86;
     box-shadow: -3px 3px 5px rgb(0, 0, 0, 60%);
     color: #666a86;
-    /* width: 100%; */
     max-width: 700px;
     padding: 2em;
-    height: fit-content;
-    /* margin: 0 auto; */
-    /* justify-content: flex-start; */
 }
 
 #name,
 #jobTitle {
     text-shadow: -1px 1px 4px rgb(0, 0, 0, 90%);
-    text-align: center;
-    margin: 10px;
+    text-align: right;
+    min-width: 30%;
 }
 
 h1#name {
@@ -89,7 +102,7 @@ h1#name {
 }
 
 #jobTitle {
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 .toolbox {
@@ -99,7 +112,7 @@ h1#name {
 }
 
 .toolbox>span {
-    background-color: #05668D;
+    background-color: var(--tools-bg-color);
     border-radius: 5px;
     color: white;
     box-shadow: -3px 3px 5px rgb(0, 0, 0, 60%);
@@ -117,13 +130,15 @@ h2,
 h3,
 h4 {
     text-align: center;
-    font-family: 'Viga', sans-serif;
+    font-family: var(--headers-font-family)
 }
 
 h3 {
     color: white;
     font-size: 3em;
     letter-spacing: 1.25rem;
+    padding-top: 1em;
+    padding-bottom: 0.25em;
 }
 
 h4 {
@@ -131,28 +146,29 @@ h4 {
 }
 
 div.featuredProjects {
-    display: flex;
-    gap: 2em;
     width: 100%;
-    /* max-width: 1000px; */
-    margin: 0 auto;
+    display: grid;
+    gap: 2em;
     color: #363062;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .project {
     box-shadow: -5px 5px 5px rgba(205, 252, 246, 50%);
-    background-color: rgb(235, 242, 250);
+    background-color: rgb(235, 242, 250, 80%);
     border-radius: 20px;
-    margin: 0;
     text-align: center;
-    width: 300px;
+    /* min-width: 200px; */
+    min-height: 100%;
+    padding-bottom: 1.25em;
+    margin: 0 auto;
 }
 
-/* #rollingSconesCard {
-    grid-column: span 3;
-} */
+.projectDescription {
+    padding: 1.25em;
+}
 
 .projectThumbnail {
     border-radius: 20px;
@@ -160,16 +176,13 @@ div.featuredProjects {
 }
 
 .tools {
-    background-color: rgb(54, 48, 98);
+    background-color: var(--tools-bg-color);
     border-radius: 5px;
-    color: #CDFCF6;
+    color: var(--container-bg-color);
     box-shadow: -3px 3px 5px rgb(152, 168, 248, 60%);
     padding: 0px 12px;
-}
-
-.contactContainer {
-    margin: 0 auto;
-    max-width: 800px;
+    white-space: nowrap;
+    line-height: 1.75em;
 }
 
 #helloWorld {
@@ -182,27 +195,24 @@ div.featuredProjects {
             rgb(0 0 0 / 0));
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
-    opacity: 75%;
+}
+
+.contactContainer {
+    margin-top: 3em;
+    padding: 2em;
 }
 
 form {
-    max-width: 800px;
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
     color: #CDFCF6;
     line-height: 2.5em;
     border: 1px solid #CDFCF6;
     border-top: none;
     border-radius: 50px;
-    padding: 0;
     box-shadow: -5px 5px 5px rgba(205, 252, 246, 50%);
     text-align: center;
-}
-
-
-#nameAndEmail {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
 }
 
 select {
@@ -217,9 +227,9 @@ textarea {
 }
 
 button {
-    background-color: #363062;
+    background-color: var(--button-background);
     border: 1px solid #CDFCF6;
-    color: #CDFCF6;
+    color: var(--tools-font-color);
     padding: .5em;
     display: block;
     margin: 10px auto;
@@ -227,23 +237,17 @@ button {
 
 
 @media screen and (orientation: portrait) {
-    header {
-        padding: 1em;
-    }
 
     section.introCard {
         flex-direction: column;
-        margin-top: 3.5em;
+        margin-top: 2.5em;
+        margin-top: 0.25em;
+        gap: 2em;
     }
 
-    .introSummary {
-        margin-bottom: 8em;
-    }
-
-    div.featuredProjects {
-        flex-direction: column-reverse;
-        width: 100%;
-        margin: 0 auto;
+    #name,
+    #jobTitle {
+        text-align: center;
     }
 
     h3 {
@@ -252,24 +256,31 @@ button {
     }
 
     .project {
-        /* display: grid; */
-        max-width: 400px;
+        max-width: 375px;
     }
 
     #lastName {
         display: none;
     }
-
-
 }
 
 @media screen and (orientation: landscape) {
-    /* section.introCard {
-        height: 60vh;
-        padding: auto 10em;
-    } */
+    section.introCard {
+        padding: 2em;
+        gap: 5em;
+    }
 
-    header {
-        background-size: 100% 100vh;
+    .introSummary {
+        width: 50%;
+    }
+
+    .featuredProjects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #rollingSconesCard {
+        grid-column: span 3;
+        width: 80%;
     }
 }
