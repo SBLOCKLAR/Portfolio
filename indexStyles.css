@@ -3,7 +3,7 @@
 :root {
     --body-font-family: Oxygen, sans-serif;
     --headers-font-family: Viga, sans-serif;
-    --background-color: black;
+    --background-color: #3A4B8C;
     --container-bg-color: rgb(235, 242, 250, 80%);
     --button-background: black;
     --tools-font-color: #CDFCF6;
@@ -18,7 +18,15 @@
 
 body {
     font-family: var(--body-font-family);
-    background-color: var(--background-color);
+    background: hsla(0, 0%, 0%, 1);
+
+    background: linear-gradient(270deg, hsla(0, 0%, 0%, 1) 0%, hsla(204, 25%, 33%, 1) 57%, hsla(195, 34%, 61%, 1) 84%, hsla(193, 26%, 71%, 1) 90%, hsla(180, 3%, 87%, 1) 100%);
+
+    background: -moz-linear-gradient(270deg, hsla(0, 0%, 0%, 1) 0%, hsla(204, 25%, 33%, 1) 57%, hsla(195, 34%, 61%, 1) 84%, hsla(193, 26%, 71%, 1) 90%, hsla(180, 3%, 87%, 1) 100%);
+
+    background: -webkit-linear-gradient(270deg, hsla(0, 0%, 0%, 1) 0%, hsla(204, 25%, 33%, 1) 57%, hsla(195, 34%, 61%, 1) 84%, hsla(193, 26%, 71%, 1) 90%, hsla(180, 3%, 87%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#3F596A", GradientType=1);
     overflow-x: hidden;
 }
 
