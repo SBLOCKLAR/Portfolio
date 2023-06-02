@@ -1,6 +1,6 @@
-import { useState } from "react";
 import Navbar from "./Navbar";
 import IntroCard from "./IntroCard";
+import ContactForm from "./ContactForm";
 import "./App.css";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <>
       <Navbar />
       <IntroCard />
+      <ContactForm />
     </>
   );
 }
