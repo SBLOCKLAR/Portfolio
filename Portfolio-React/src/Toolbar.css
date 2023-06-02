@@ -1,0 +1,14 @@
+.Toolbar {
+  background-color: var(--tools-bg-color);
+  border-radius: 5px;
+  color: white;
+  box-shadow: -3px 3px 5px rgb(0, 0, 0, 60%);
+  padding: 0px 12px;
+  margin: 0.25em;
+}
+
+.Toolbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

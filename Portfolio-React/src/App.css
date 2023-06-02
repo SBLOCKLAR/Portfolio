@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
+
+:root {
+  --body-font-family: Oxygen, sans-serif;
+  --headers-font-family: Viga, sans-serif;
+  --background-color: #3a4b8c;
+  --container-bg-color: rgb(235, 242, 250, 80%);
+  --button-background: black;
+  --tools-font-color: #cdfcf6;
+  --tools-bg-color: #05668d;
+}
+
+#root {
+  font-family: Oxygen;
+}

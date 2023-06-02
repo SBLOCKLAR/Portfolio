@@ -1,0 +1,22 @@
+.Navbar {
+  width: 100vw;
+}
+
+.Navlinks {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Navlink {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+}
+
+.Navlink:hover {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
