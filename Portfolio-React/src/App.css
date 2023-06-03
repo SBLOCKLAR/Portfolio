@@ -10,6 +10,10 @@
   --tools-bg-color: #05668d;
 }
 
+.dark-mode body {
+  background-color: black;
+}
+
 #root {
   font-family: Oxygen;
 }

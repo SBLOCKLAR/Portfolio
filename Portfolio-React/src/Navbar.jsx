@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import DarkLightToggle from "./DarkLightToggle";
 
 export default function Navbar() {
   return (
@@ -19,6 +20,7 @@ export default function Navbar() {
             Resume
           </a>
         </li>
+        <DarkLightToggle />
       </ul>
     </nav>
   );
