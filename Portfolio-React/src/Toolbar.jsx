@@ -18,7 +18,9 @@ export default function Toolbar() {
   return (
     <div className="Toolbox">
       {tools.map((tool) => (
-        <span className="Toolbar">{tool}</span>
+        <span key="{tool}" className="Toolbar">
+          {tool}
+        </span>
       ))}
     </div>
   );

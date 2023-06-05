@@ -2,8 +2,8 @@
 .DarkLightToggle {
   position: relative;
   display: inline;
-  width: 50px;
-  height: 24px;
+  width: 40px;
+  height: 22px;
 }
 
 /* Hide default HTML checkbox */
@@ -29,8 +29,8 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 17px;
-  width: 17px;
+  height: 15px;
+  width: 15px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -47,9 +47,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
 }
 
 /* Rounded sliders */
@@ -64,4 +64,8 @@ input:checked + .slider:before {
 .dark-mode {
   background-color: navy;
   color: white;
+}
+
+.bi-moon {
+  transform: translate(-1.25em, 0.25em);
 }
